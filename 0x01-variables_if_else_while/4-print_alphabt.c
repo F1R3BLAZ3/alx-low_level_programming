@@ -7,16 +7,11 @@
 int main(void)
 {
 	char ascii;
-	char ascii_2;
-	char ascii_3;
 
-	ascii = 97;
-	ascii_2 = 102;
-	ascii_3 = 114;
-	while ((ascii <= 100) && (ascii_2 <= 112) && (ascii_3 <= 122))
+	for (ascii = 'a'; ascii <= 'z'; ascii++)
 	{
-		putchar(ascii, ascii_2, ascii_3);
-		ascii++;
+		if (ascii != 'q' && ascii != 'e')
+			putchar(ascii);
 	}
 
 	putchar('\n');

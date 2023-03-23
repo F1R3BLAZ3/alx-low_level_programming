@@ -9,6 +9,7 @@
 void print_diagonal(int n)
 {
 	int line;
+	int space;
 
 	if (n <= 0)
 	{
@@ -18,17 +19,15 @@ void print_diagonal(int n)
 	{
 		for (line = 0; line < n; line++)
 		{
-			int space;
 
 			for (space = 0; space < line; space++)
 			{
 				_putchar(32);
 			}
+
 			_putchar(92);
 			_putchar('\n');
-			line++;
 		}
 
-		_putchar('\n');
 	}
 }

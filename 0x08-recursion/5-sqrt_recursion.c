@@ -54,6 +54,6 @@ int _sqrt_recursion(int n)
 	}
 	else /* If n is greater than 1, recursively find the square root */
 	{
-		return (find_sqrt(n, 1, n));
+		return (find_sqrt(n, 1, n/2));
 	}
 }

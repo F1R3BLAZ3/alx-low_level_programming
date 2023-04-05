@@ -8,9 +8,9 @@
  *
  * Return: The square root of n.
  */
-int find_sqrt(int n, int min, int max)
+long int find_sqrt(long int n, long int min, long int max)
 {
-	int mid;
+	long int mid;
 
 	if (max >= min)
 	{
@@ -54,6 +54,6 @@ int _sqrt_recursion(int n)
 	}
 	else /* If n is greater than 1, recursively find the square root */
 	{
-		return (find_sqrt(n, 1, n/2));
+		return ((int) find_sqrt((long int) n, 1, (long int) n));
 	}
 }

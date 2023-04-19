@@ -4,6 +4,7 @@
   * print_name - Print a name.
   * @name: Parameter.
   * @f: Pointer to function.
+  *
   * Return: void.
   */
 

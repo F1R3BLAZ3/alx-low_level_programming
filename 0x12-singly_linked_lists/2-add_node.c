@@ -1,12 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-typedef struct list_s
-{
-	char *str;
-	struct list_s *next;
-} list_t;
-
 list_t *add_node(list_t **head, const char *str)
 {
 	if (str == NULL)

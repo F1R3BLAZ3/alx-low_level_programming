@@ -14,7 +14,7 @@ void print_binary(unsigned long int n)
 
 	bin_range <<= (sizeof(unsigned long int) * 8 - 1);
 
-	while  (bin_range > 0)
+	while (bin_range > 0)
 		{
 			if (n & bin_range)
 			{

@@ -13,7 +13,7 @@
  * main - the entry point of the program
  * @argc: the number of command-line arguments passed to the program
  * @argv: an array of strings containing the command-line arguments
- * 
+ *
  * Return: 0 on success, non-zero on failure
  */
 int main(int argc, char *argv[])
@@ -65,7 +65,7 @@ int main(int argc, char *argv[])
  * @exit_code: the exit code to use when exiting
  * @message: the error message to print
  * @arg: an argument to include in the error message
- * 
+ *
  * Return: This function does not return, it exits with the given exit code.
  */
 void error_exit(int exit_code, const char *message, const char *arg)

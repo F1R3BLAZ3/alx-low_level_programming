@@ -9,8 +9,13 @@
 
 #define BUFFER_SIZE 1024
 
-void error_exit(int exit_code, const char *message, const char *arg);
-
+/**
+ * main - the entry point of the program
+ * @argc: the number of command-line arguments passed to the program
+ * @argv: an array of strings containing the command-line arguments
+ * 
+ * Return: 0 on success, non-zero on failure
+ */
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, bytes_read, bytes_written;
@@ -60,9 +65,17 @@ int main(int argc, char *argv[])
 		error_exit(100, "Error: Can't close fd %s\n", file_to_str);
 	}
 
-	return 0;
+	return (0);
 }
 
+/**
+ * error_exit - prints an error message and exits with an error code
+ * @exit_code: the exit code to use when exiting
+ * @message: the error message to print
+ * @arg: an argument to include in the error message
+ * 
+ * Return: This function does not return, it exits with the given exit code.
+ */
 void error_exit(int exit_code, const char *message, const char *arg)
 {
 	dprintf(STDERR_FILENO, message, arg);

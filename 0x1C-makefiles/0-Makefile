@@ -1,0 +1,9 @@
+# Makefile for building the "school" executable
+
+# Rule for building the executable
+all:
+    gcc main.c school.c -o school
+
+# Rule to clean up the generated files
+clean:
+    rm -f school

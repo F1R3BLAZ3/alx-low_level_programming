@@ -82,3 +82,7 @@ main.c
 0x1A-hash_tables/1-main.c
 .gitignore
 0x1A-hash_tables/b
+0x1C-makefiles/a.out
+0x1C-makefiles/m.h
+0x1C-makefiles/README.md
+0x1C-makefiles/school.c

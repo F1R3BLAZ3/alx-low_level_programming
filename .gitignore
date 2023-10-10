@@ -90,3 +90,6 @@ main.c
 0x1E-search_algorithms/0-linear
 .vscode/c_cpp_properties.json
 0x1E-search_algorithms/0-main.c
+0x1E-search_algorithms/1-binary
+.gitignore
+0x1E-search_algorithms/1-main.c
